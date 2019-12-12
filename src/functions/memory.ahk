@@ -52,7 +52,7 @@ load_memory(v_index, v_type)
         if (v_size > 0) 
         {
             HideTrayTip()
-            TrayTip, Cyclops - Type, %v_text%, , 16
+            TrayTip, Cyclops - Type, Typing a Text, , 16
             Send, %v_text%    
         }
     }
