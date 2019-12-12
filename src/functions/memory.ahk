@@ -4,7 +4,7 @@
 
 save_memory(v_index, v_type)
 {   
-    v_memo_text := get_memory(v_index, v_type)
+    v_memo_text := private_get_memory(v_index, v_type)
 
     if (v_type = "T") ; TEXT
     {
@@ -49,8 +49,12 @@ load_memory(v_index, v_type)
         v_text := Adjust_Text(v_text)
         StringLen v_size, v_text
 
-        if (v_size > 0)
+        if (v_size > 0) 
+        {
+            HideTrayTip()
+            TrayTip, Cyclops - Type, %v_text%, , 16
             Send, %v_text%    
+        }
     }
 
     if (v_type = "E") ; EXECUTE
@@ -58,6 +62,9 @@ load_memory(v_index, v_type)
         IniRead, v_file_path, %A_ScriptDir%\Cyclops.ini, Memory, EXEMemo%v_index%
         if v_file_path = Error 
             Return
+
+        HideTrayTip()
+        TrayTip, Cyclops - Execute, %v_file_path%, , 16
 
         Run, %v_file_path%        
     }
@@ -71,10 +78,15 @@ load_memory(v_index, v_type)
         SetTitleMatchMode, 2
         SetTitleMatchMode, slow
         WinActivate, %v_window_caption%
+        ;Sleep, 100
+        ;WinGetActiveTitle, v_win_caption
+
+        HideTrayTip()
+        TrayTip, Cyclops - Activate, %v_window_caption%, , 16
     }    
 }
 
-get_memory(v_index, v_type)
+private_get_memory(v_index, v_type)
 {
 
     if (v_type = "T") ; TEXT

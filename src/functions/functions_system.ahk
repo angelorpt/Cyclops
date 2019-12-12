@@ -237,3 +237,14 @@ win_show_sub:
         Return
 
 Return
+
+
+; Copia Nome atual da janela / Copy Window Caption
+^+#n::
+
+    WinGetActiveTitle, v_win_caption
+    HideTrayTip()
+    TrayTip, Cyclops - Copy Window Name, %v_win_caption%
+    Clipboard := v_win_caption
+    
+Return
