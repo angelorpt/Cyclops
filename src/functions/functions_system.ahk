@@ -23,32 +23,36 @@ IP: %A_IPAddress1%
 )
 Return
 
+;------------------------
+; DEFAULT APPS
+;------------------------
+
 ; Bloco de Notas / Notepad
 ^!numpad1::
-    TrayTip Bloco de Notas, Abrindo bloco de notas
+    TrayTip Notepad, Opening Notepad
     run, notepad.exe
 Return
 
 ; Bloco de Notas / Notepad
 ^!1::
-    TrayTip Bloco de Notas, Abrindo bloco de notas
+    TrayTip Notepad, Opening Notepad
     run, notepad.exe
 Return
 
-; Calculadora / Calc
+; Calculadora / Calculator
 ^!numpad2::
-    TrayTip Calculadora, Abrindo calculadora
+    TrayTip Calculator, Opening Calculator
     run, calc.exe
 Return
 
-; Calculadora / Calc
+; Calculadora / Calculator
 ^!2::
-    TrayTip Calculadora, Abrindo calculadora
+    TrayTip Calculator, Opening Calculator
     run, calc.exe
 Return
 
 ;------------------------
-; Desligar / Reiniciar
+; Shut Down / Reboot
 ;------------------------
 
 ;Logoff 		0
@@ -57,12 +61,11 @@ Return
 ;Force 			4
 ;Power down 	8
 
-
 ;------------
 ; SHUTDOWN 
 ;------------
 ^#!numpad0::
-    MsgBox, 4, , Deseja desligar o computador agora?, 5
+    MsgBox, 4, , Do you want to turn off your pc now?, 5
     IfMsgBox, No
         Return
     IfMsgBox, Timeout
@@ -70,12 +73,13 @@ Return
 
     Gosub, close_all_windows_sub
 
-    TrayTip Desligar, O Sistema Operacional será desligado., 3000
+    Sleep, 1000
+    TrayTip Shut Down, Your PC is shutting down., 3000
 	Shutdown, 1
 Return
 
 ^#!0::
-    MsgBox, 4, , Deseja desligar o computador agora?, 5
+    MsgBox, 4, , Do you want to turn off your pc now?, 5
     IfMsgBox, No
         Return
     IfMsgBox, Timeout
@@ -83,71 +87,74 @@ Return
 
     Gosub, close_all_windows_sub
 
-    TrayTip Desligar, O Sistema Operacional será desligado., 3000
+    Sleep, 1000
+    TrayTip Shut Down, Your PC is shutting down., 3000
 	Shutdown, 1
 Return
 
 
 
-;------------
-; RESTART 
-;------------
+;----------------------
+; REINICIAR / REBOOT
+;----------------------
+
 ^#!numpad8::
-    MsgBox, 4, , Deseja reiniciar o computador agora?, 5
+    MsgBox, 4, , Do you want to reboot your pc now?, 5
     IfMsgBox, No
         Return
     IfMsgBox, Timeout
         Return
 
-    TrayTip Reiniciar, O Sistema Operacional será reiniciado., 3000
+    TrayTip Reiniciar, Your PC is restarting., 3000
 	Shutdown, 2
 Return
 
 ^#!8::
-    MsgBox, 4, , Deseja reiniciar o computador agora?, 5
+    MsgBox, 4, , Do you want to reboot your pc now?, 5
     IfMsgBox, No
         Return
     IfMsgBox, Timeout
         Return
 
-    TrayTip Reiniciar, O Sistema Operacional será reiniciado., 3000
+    TrayTip Reiniciar, Your PC is restarting., 3000
 	Shutdown, 2
 Return
 
 
 
-;------------
-; HIBERNATE 
-;------------
+;------------------------
+; HIBERNAR / HIBERNATE 
+;------------------------
+
 ^#!numpad5::
-    MsgBox, 4, , Deseja hibernar o computador agora?, 5
+    MsgBox, 4, , Do you want to hibernate your pc now?, 5
     IfMsgBox, No
         Return
     IfMsgBox, Timeout
         Return
 
-    TrayTip Hibernar, O Sistema Operacional entrará em modo de hibernação., 3000
+    TrayTip Hibernar, Your PC is going into hibernation mode., 3000
     Sleep, 3000
     DllCall("PowrProf\SetSuspendState", "int", 1, "int", 0, "int", 0)
 Return
 
 ^#!5::
-    MsgBox, 4, , Deseja hibernar o computador agora?, 5
+    MsgBox, 4, , Do you want to hibernate your PC now?, 5
     IfMsgBox, No
         Return
     IfMsgBox, Timeout
         Return
 
-    TrayTip Hibernar, O Sistema Operacional entrará em modo de hibernação., 3000
+    TrayTip Hibernar, Your PC is going into hibernation mode., 3000
     Sleep, 3000
     DllCall("PowrProf\SetSuspendState", "int", 1, "int", 0, "int", 0)
 Return
 
 
 
-; --------------------------------------------- 
-; Ativar todas as janelas abertas 
-; --------------------------------------------- 
+; --------------------------------------------------------
+; Ativar todas as janelas abertas / Activate all windows
+; --------------------------------------------------------
 
 ^#+w::
     Gosub, activate_all_windows_sub
@@ -171,11 +178,11 @@ activate_all_windows_sub:
 Return
 
 ; --------------------------------------------- 
-; Fechar todas as janelas 
+; Fechar todas as janelas / Close all windows
 ; --------------------------------------------- 
 
 ^#+c::
-    MsgBox, 4, , Deseja fechar todas a janelas do windows abertas?, 5
+    MsgBox, 4, , Do you want to close all open windows?, 5
     IfMsgBox, No
         Return
     IfMsgBox, Timeout
@@ -228,4 +235,5 @@ win_show_sub:
 
     GuiClose:
         Return
+
 Return

@@ -1,116 +1,114 @@
 ; --------------------------------------------- 
-; CODES CYCLOPS.INI - MEMORY - numbers 
+; CODES CYCLOPS.INI - MEMORY - NUMBERS 
 ; --------------------------------------------- 
 
-save_memory(indice, tipo)
+save_memory(v_index, v_type)
 {   
-    ;tipo: T - texto, E - exec, W - window
+    v_memo_text := get_memory(v_index, v_type)
 
-    v_memo_text := get_memory(indice, tipo)
-
-    ; TEXTO 
-
-    if (tipo = "T")
+    if (v_type = "T") ; TEXT
     {
-        InputBox, texto, Salvar Texto, Digite o texto para salvar em Memory[%indice%],,,,,,,, %v_memo_text%
+        InputBox, v_text, Save Text, Typist the text to save in Cyclops[%v_index%],,,,,,,, %v_memo_text%
         if ErrorLevel 
             Return
-        StringLen tam, texto
-        if (tam > 0)
-            IniWrite, %texto%, %A_ScriptDir%\Cyclops.ini, Memory, Memo%indice%
+        StringLen v_size, v_text
+        if (v_size > 0)
+            IniWrite, %v_text%, %A_ScriptDir%\Cyclops.ini, Memory, Memo%v_index%
     }    
 
-    ; EXECUTAVEL
-
-    if (tipo = "E")
+    if (v_type = "E") ; EXECUTE
     {
-        InputBox, diretorio, Salvar Diretório Executável, Informe o path completo do arquivo Executável Memory.exe[%indice%],,,,,,,, %v_memo_text%
+        InputBox, v_path, Save Path, Typist the File Path or URL to save in Cyclops[%v_index%],,,,,,,, %v_memo_text%
         if ErrorLevel 
             Return
-        StringLen tam, diretorio
+        StringLen tam, v_path
         if (tam > 0)
-            IniWrite, %diretorio%, %A_ScriptDir%\Cyclops.ini, Memory, EXEMemo%indice%
+            IniWrite, %v_path%, %A_ScriptDir%\Cyclops.ini, Memory, EXEMemo%v_index%
     }
 
-    ; WINDOW ACTIVATE
-
-    if (tipo = "W")
+    if (v_type = "W") ; WINDOW
     {
-        InputBox, window_name, Salvar Janela Windows, Informe o nome da janela para salvar no Memory.exe[%indice%],,,,,,,, %v_memo_text%
+        InputBox, v_window_caption, Save Window Caption, Typist the part of Window Caption to save in Cyclops[%v_index%],,,,,,,, %v_memo_text%
         if ErrorLevel 
             Return
 		
-		IniWrite, %window_name%, %A_ScriptDir%\Cyclops.ini, Memory, WindowMemo%indice%
+		IniWrite, %v_window_caption%, %A_ScriptDir%\Cyclops.ini, Memory, WindowMemo%v_index%
     }    
 
 }
 
-load_memory(indice, tipo)
+load_memory(v_index, v_type)
 {
-    ;tipo: T - texto, E - exec
-    if (tipo = "T")
+
+    if (v_type = "T") ; TEXT
     {    
-        IniRead, texto, %A_ScriptDir%\Cyclops.ini, Memory, Memo%indice%
-        if texto = Error
+        IniRead, v_text, %A_ScriptDir%\Cyclops.ini, Memory, Memo%v_index%
+        if v_text = Error
             Return
 
-        texto := AjustarTexto(texto)
-        StringLen tam, texto
+        v_text := Adjust_Text(v_text)
+        StringLen v_size, v_text
 
-        if (tam > 0)
-            Send, %texto%    
+        if (v_size > 0)
+            Send, %v_text%    
     }
 
-    if (tipo = "E")
+    if (v_type = "E") ; EXECUTE
     {
-        IniRead, v_file_exec, %A_ScriptDir%\Cyclops.ini, Memory, EXEMemo%indice%
-        if v_file_exec = Error 
+        IniRead, v_file_path, %A_ScriptDir%\Cyclops.ini, Memory, EXEMemo%v_index%
+        if v_file_path = Error 
             Return
 
-        Run, %v_file_exec%        
+        Run, %v_file_path%        
     }
 
-    if (tipo = "W")
+    if (v_type = "W") ; WINDOW
     {
-        IniRead, v_window_name, %A_ScriptDir%\Cyclops.ini, Memory, WindowMemo%indice%
-        if v_window_name = Error 
+        IniRead, v_window_caption, %A_ScriptDir%\Cyclops.ini, Memory, WindowMemo%v_index%
+        if v_window_caption = Error 
             Return
 
         SetTitleMatchMode, 2
         SetTitleMatchMode, slow
-        WinActivate, %v_window_name%
+        WinActivate, %v_window_caption%
     }    
 }
 
-get_memory(indice, tipo)
+get_memory(v_index, v_type)
 {
-    ;tipo: T - texto, E - exec
-    if (tipo = "T")
+
+    if (v_type = "T") ; TEXT
     {    
-        IniRead, texto, %A_ScriptDir%\Cyclops.ini, Memory, Memo%indice%
-        if texto = Error
+        IniRead, sText, %A_ScriptDir%\Cyclops.ini, Memory, Memo%v_index%
+        if sText = Error
             Return
-        texto := AjustarTexto(texto)
-        StringLen tam, texto
+        sText := Adjust_Text(sText)
+        StringLen tam, sText
         if (tam > 0)
-            Return %texto%    
+            Return %sText%    
     }
-    if (tipo = "E")
+
+    if (v_type = "E") ; EXECUTE
     {
-        IniRead, v_file_exec, %A_ScriptDir%\Cyclops.ini, Memory, EXEMemo%indice%
+        IniRead, v_file_exec, %A_ScriptDir%\Cyclops.ini, Memory, EXEMemo%v_index%
         if v_file_exec = Error 
             Return
         Return, %v_file_exec%        
     }
 
-    if (tipo = "W")
+    if (v_type = "W") ; WINDOW
     {
-        IniRead, v_window_name, %A_ScriptDir%\Cyclops.ini, Memory, WindowMemo%indice%
+        IniRead, v_window_name, %A_ScriptDir%\Cyclops.ini, Memory, WindowMemo%v_index%
         if v_window_name = Error 
             Return
         Return, %v_window_name%        
     }    
 }
+
+
+; ----------------------
+; -- SHOTCUTS -- TEXT
+; ----------------------
 
 !#1::
     save_memory("1", "T")
@@ -192,9 +190,9 @@ Return
     load_memory("0", "T")
 Return
 
-; --------------------------------------------- 
-; CYCLOPS.INI - MEMORY - letters 
-; --------------------------------------------- 
+; ----------------------------------
+; -- SHOTCUTS -- TEXT -- LETTERS
+; ----------------------------------
 
 !#a::
     save_memory("A", "T")
@@ -412,10 +410,10 @@ Return
     load_memory("Ç", "T")
 Return
 
-; --------------------------------------------- 
-; EXECUTAVEIS 
-; --------------------------------------------- 
 
+; -----------------------------------
+; -- SHOTCUTS -- EXECUTE -- NUMBERS
+; -----------------------------------
 
 ^#1::
     save_memory("1", "E")
@@ -497,9 +495,10 @@ Return
     load_memory("0", "E")
 Return
 
-; --------------------------------------------- 
-; CYCLOPS.INI - MEMORY - LETTERS 
-; --------------------------------------------- 
+; -----------------------------------
+; -- SHOTCUTS -- EXECUTE -- LETTERS
+; -----------------------------------
+
 
 ^#a::
     save_memory("A", "E")
@@ -718,9 +717,9 @@ Return
 Return
 
 
-; --------------------------------------------- 
-; WINDOW ACTIVATE 
-; --------------------------------------------- 
+; ------------------------------------------
+; -- SHOTCUTS -- WINDOW ACTIVATE -- NUMPAD
+; ------------------------------------------
 
 #!Numpad1::
     save_memory("1", "W")

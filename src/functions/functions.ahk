@@ -15,7 +15,7 @@ restart_cyclops_sub:
     Reload
 Return
 
-AjustarTexto(sText)
+Adjust_Text(sText)
 {
     ; StringReplace, sText, sText, {, {{}, All ; x
     ; StringReplace, sText, sText, }, {}}, All ; x
