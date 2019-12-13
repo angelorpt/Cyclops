@@ -50,13 +50,15 @@ _NUMPAD = Teclado Numérico_
 
 `CTRL + ALT + [NUMPAD 2]` - Abre a calculadora.
 
+`CTRL + WIN + SHIFT + I` - Informações do Sistema.
+
 `CTRL + WIN + SHIFT + N` - Copia o nome da janela para a área de transferência.
 
 `CTRL + WIN + SHIFT + W` - Ativa todas as janelas abertas.
 
 `CTRL + WIN + SHIFT + C` - Fecha todas as janelas abertas.
 
-`CTRL + WIN + ALT + [NUMPAD 8]` - Reinicia o Sistema Operaci0onal.
+`CTRL + WIN + ALT + [NUMPAD 8]` - Reinicia o Sistema Operacional.
 
 `CTRL + WIN + ALT + [NUMPAD 5]` - Hiberna o Sistema Operacional.
 
