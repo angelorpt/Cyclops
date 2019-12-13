@@ -8,11 +8,11 @@
 
 ## Experimente
 
-1. `ALT + WIN + K` - Digite um texto qualquer.
+1. `ALT + WIN + C` - Digite um texto qualquer.
 
 2. `CTRL + ALT + NUMPAD1` - Abrir o Bloco de Notas
 
-3. `ALT + SHIFT - K` - Digita o texto que você informou anteriormente
+3. `ALT + SHIFT - C` - Digita o texto que você informou anteriormente
 
 <br>
 
