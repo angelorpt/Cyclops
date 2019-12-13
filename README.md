@@ -2,7 +2,7 @@
 
 ![Cyclops](./img/cyclops_128x128.png)
 
-**Cyclops** é um aplicativo desenvolvido em AutoHotkey que tem o objetivo de tornar mais rápido e eficiente a troca entre janelas, memorização de texto e execução rápida de arquivos e endereços web. 
+**Cyclops** é um aplicativo desenvolvido em [AutoHotkey](https://www.autohotkey.com) que tem o objetivo de tornar mais rápido e eficiente a troca entre janelas, memorização de texto e execução rápida de arquivos e endereços web. 
 
 <br>
 
