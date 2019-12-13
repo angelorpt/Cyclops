@@ -16,13 +16,13 @@
 
 <br>
 
-*[NUMPAD]: Teclado Numérico
+_NUMPAD = Teclado Numérico_
 
 <br>
 
 ---
 
-### Memory Text
+## Memory Text
 
 `ALT + WIN + [A..Z/0..9]` - Salva um texto na memória interna.
 
@@ -32,7 +32,7 @@
 
 ---
 
-### Execute File or URL
+## Execute File or URL
 
 `CTRL + WIN + [A..Z/0..9]` - Informe o caminho completo do arquivo ou URL.
 
@@ -42,7 +42,7 @@
 
 ---
 
-### Switch Window
+## Switch Window
 
 `WIN + ALT + [NUMPAD 0..9]` - Informe parte do nome que está no título da janela.
 
@@ -52,7 +52,7 @@
 
 ---
 
-### Others Functions
+## Others Functions
 
 `CTRL + ALT + [NUMPAD 1]` - Abre o bloco de notas.
 
