@@ -20,8 +20,6 @@ _NUMPAD = Teclado Numérico_
 
 <br>
 
----
-
 ## Memory Text
 
 `ALT + WIN + [A..Z/0..9]` - Salva um texto na memória interna.
@@ -29,8 +27,6 @@ _NUMPAD = Teclado Numérico_
 `ALT + SHIFT + [A..Z/0..9]` - Digita o texto que foi salva no atalho correspondente.
 
 <br>
-
----
 
 ## Execute File or URL
 
@@ -40,8 +36,6 @@ _NUMPAD = Teclado Numérico_
 
 <br>
 
----
-
 ## Switch Window
 
 `WIN + ALT + [NUMPAD 0..9]` - Informe parte do nome que está no título da janela.
@@ -49,8 +43,6 @@ _NUMPAD = Teclado Numérico_
 `WIN + CTRL + [NUMPAD 0..9]` - Ativa a janela que possui o nome cadastrado.
 
 <br>
-
----
 
 ## Others Functions
 
