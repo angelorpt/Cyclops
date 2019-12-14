@@ -10,7 +10,7 @@
 
 1. `ALT + WIN + C` - Digite um texto qualquer.
 
-2. `CTRL + ALT + NUMPAD1` - Abrir o Bloco de Notas
+2. `CTRL + ALT + [NUMPAD 1]` - Abrir o Bloco de Notas
 
 3. `ALT + SHIFT - C` - Digita o texto que você informou anteriormente
 
