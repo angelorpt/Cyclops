@@ -50,7 +50,7 @@ _NUMPAD = Teclado Numérico_
 
 `CTRL + ALT + [NUMPAD 2]` - Abre a calculadora.
 
-`CTRL + WIN + SHIFT + I` - Informações do Sistema.
+`CTRL + WIN + ALT + I` - Informações do Sistema.
 
 `CTRL + WIN + SHIFT + N` - Copia o nome da janela para a área de transferência.
 
