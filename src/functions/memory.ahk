@@ -51,8 +51,8 @@ load_memory(v_index, v_type)
 
         if (v_size > 0) 
         {
-            HideTrayTip()
-            TrayTip, Cyclops - Type, Typing a Text, , 16
+            ; HideTrayTip()
+            ; TrayTip, Cyclops - Type, Typing a Text, , 16
             Send, %v_text%    
         }
     }
@@ -81,8 +81,8 @@ load_memory(v_index, v_type)
         ;Sleep, 100
         ;WinGetActiveTitle, v_win_caption
 
-        HideTrayTip()
-        TrayTip, Cyclops - Activate, %v_window_caption%, , 16
+        ; HideTrayTip()
+        ; TrayTip, Cyclops - Activate, %v_window_caption%, , 16
     }    
 }
 
