@@ -1,12 +1,13 @@
 ﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#SingleInstance, Force
 ;#Warn  ; Enable warnings to assist with detecting common errors.
 ; SetKeyDelay, 100
-; SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
+SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_MyDocuments%  ;  %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 ProductName      := "Cyclops"
-ProductVersion   := "0.1.4"
+ProductVersion   := "0.1.5"
 ProductPublisher := "Angelo R. Pinto"
 ProductWebsite   := "https://github.com/angelorpt/cyclops"
 autoComplete     := 0 ; DEFAULT
