@@ -7,21 +7,23 @@
   - [Experimente Rápido](#experimente-rápido)
   - [Texto Rápido](#texto-rápido)
     - [Associação com Letras / Números](#associação-com-letras--números)
-      - [Associar Texto](#associar-texto)
-      - [Escrever Texto Associado](#escrever-texto-associado)
-    - [Associação com uma Chave Personalizada](#associação-com-uma-chave-personalizada)
-      - [Salvar Texto a Chave Personalizada](#salvar-texto-a-chave-personalizada)
-      - [Recuperar Texto associado a Chave](#recuperar-texto-associado-a-chave)
-  - [Executar Arquivos/URL](#executar-arquivosurl)
     - [Observações](#observações)
+      - [Associar Texto](#associar-texto)
+      - [Escrever Texto](#escrever-texto)
+    - [Salvar Texto com uma Chave Personalizada](#salvar-texto-com-uma-chave-personalizada)
+      - [Salvar Texto com Chave Personalizada](#salvar-texto-com-chave-personalizada)
+      - [Escrever Texto Associado a Chave Personalizada](#escrever-texto-associado-a-chave-personalizada)
+  - [Executar Arquivos/URL](#executar-arquivosurl)
+    - [Observações](#observações-1)
     - [Associar Arquivo/URL](#associar-arquivourl)
     - [Executar Arquivo/URL](#executar-arquivourl)
   - [Windows Switcher / Alternador de Janelas](#windows-switcher--alternador-de-janelas)
-    - [Observações](#observações-1)
+    - [Observações](#observações-2)
     - [Teclado Númerico | Numpad](#teclado-númerico--numpad)
     - [Associar uma Janela](#associar-uma-janela)
     - [Ativar Janela](#ativar-janela)
   - [Outras Funções](#outras-funções)
+  - [Observações Importantes](#observações-importantes)
   - [LICENÇA MIT](#licença-mit)
 
 **Cyclops** é um aplicativo desenvolvido em [AutoHotkey](https://www.autohotkey.com) que tem o objetivo de tornar mais rápido e eficiente a troca entre janelas, memorização de texto e execução rápida de arquivos e endereços web.
@@ -55,9 +57,14 @@
 
 ### Associação com Letras / Números
 
-- Utilizando as Letras [A..Z] e Números [0..9] como Chaves
-
 Com esta funcionalidade você pode armazenar um texto, frase, palavra, números ou letras, associando com uma tecla, e recuperar rapidamente esta informação através de atalhos.
+
+### Observações
+
+- Você pode utilizar todas as letras [A..Z] e números [0..9] do teclado normal (não é o teclado numérico).
+- O aplicativo realmente digita o texto associado. Como se cada tecla fosse pressionada.
+- Todos os textos armazenados são salvos em apenas uma linha de texto.
+- Não é possível armazenar um texto que possui múltiplas linhas à uma única chave. (Não é multilinha)
 
 #### Associar Texto
 
@@ -73,7 +80,7 @@ Com esta funcionalidade você pode armazenar um texto, frase, palavra, números ou
 | ...                                            | Associa um texto com cada Número do Teclado |
 | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>0</kbd> | Associa um texto a Tecla 0                  |
 
-#### Escrever Texto Associado
+#### Escrever Texto
 
 | Atalho                                         | Descrição                                         |
 | ---------------------------------------------- | ------------------------------------------------- |
@@ -87,11 +94,11 @@ Com esta funcionalidade você pode armazenar um texto, frase, palavra, números ou
 | ...                                            | Escreve texto associado com Número do Teclado     |
 | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>0</kbd> | Escreve texto associado a Tecla 0                 |
 
-### Associação com uma Chave Personalizada
+### Salvar Texto com uma Chave Personalizada
 
 Talvez você queira associar um Texto a uma Palavra específica para seu contexto. Neste caso você pode armazenar uma chave personalizada.
 
-#### Salvar Texto a Chave Personalizada
+#### Salvar Texto com Chave Personalizada
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>I</kbd> | Faz a associação com uma chave personalizada
 
@@ -107,7 +114,7 @@ Você pode utilizar a palavra "Matrícula" como **Chave** e associar o Texto "1234
 
 _Matricula=12345_
 
-#### Recuperar Texto associado a Chave
+#### Escrever Texto Associado a Chave Personalizada
 
 Para recuperar esta informação você pode utilizar o atalho
 
@@ -185,7 +192,7 @@ Você pode alterar rapidamente entre janelas do Windows sem utilizar o <kbd>Alt</
 
 ### Associar uma Janela
 
-| Associar Arquivo / URL                                | Descrição                                 |
+| Atalho                                                | Descrição                                 |
 | ----------------------------------------------------- | ----------------------------------------- |
 | <kbd>Win</kbd> + <kbd>Alt</kbd> + <kbd>NUMPAD 0</kbd> | Associa uma janela do Windows ao Número 0 |
 | <kbd>Win</kbd> + <kbd>Alt</kbd> + <kbd>NUMPAD 1</kbd> | Associa uma janela do Windows ao Número 1 |
@@ -194,14 +201,12 @@ Você pode alterar rapidamente entre janelas do Windows sem utilizar o <kbd>Alt</
 
 ### Ativar Janela
 
-| Associar Arquivo / URL                                 | Descrição                                               |
+| Atalho                                                 | Descrição                                               |
 | ------------------------------------------------------ | ------------------------------------------------------- |
 | <kbd>Win</kbd> + <kbd>Ctrl</kbd> + <kbd>NUMPAD 0</kbd> | Ativa a janela do Windows com Título associado Número 0 |
 | <kbd>Win</kbd> + <kbd>Ctrl</kbd> + <kbd>NUMPAD 1</kbd> | Ativa a janela do Windows com Título associado Número 1 |
 | ...                                                    |                                                         |
 | <kbd>Win</kbd> + <kbd>Ctrl</kbd> + <kbd>NUMPAD 9</kbd> | Ativa a janela do Windows com Título associado Número 9 |
-
-`WIN + CTRL + [NUMPAD 0..9]` - Ativa a janela que possui o nome cadastrado.
 
 <br>
 
@@ -221,6 +226,12 @@ Você pode alterar rapidamente entre janelas do Windows sem utilizar o <kbd>Alt</
 | <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd>   | Desliga o Sistema Operacional  |
 
 <br>
+
+## Observações Importantes
+
+- Todos os textos e atalhos são armazenados em um arquivos **.ini** criado no mesmo diretório do executável.
+- Os dados que você informa não são compartilhados na nuvem ou em lugar algum.
+- Todos os textos e atalhos ficam somente no seu computador.
 
 ## LICENÇA MIT
 
