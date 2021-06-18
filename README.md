@@ -3,6 +3,7 @@
 ![Cyclops](./img/cyclops_128x128.png)
 
 - [Cyclops](#cyclops)
+  - [O que é o Cyclops?](#o-que-é-o-cyclops)
   - [Quando posso utilizar o Cyclops?](#quando-posso-utilizar-o-cyclops)
   - [Experimente Rápido](#experimente-rápido)
   - [Texto Rápido](#texto-rápido)
@@ -26,7 +27,21 @@
   - [Observações Importantes](#observações-importantes)
   - [LICENÇA MIT](#licença-mit)
 
-**Cyclops** é um aplicativo desenvolvido em [AutoHotkey](https://www.autohotkey.com) que tem o objetivo de tornar mais rápido e eficiente a troca entre janelas, memorização de texto e execução rápida de arquivos e endereços web.
+<br>
+
+## O que é o Cyclops?
+
+**Cyclops** é um aplicativo desenvolvido na linguagem de Script chamada [AutoHotkey](https://www.autohotkey.com) que tem por objetivo tornar o usuário mais eficiente ao utilizar o Sistema Operacional Windows. Especialmente desenvolvedores.
+
+Mais rápido que Billy the Kid utilizando o <kbd>Alt</kbd> + <kbd>Tab</kbd>, agiliza a troca direcionada entre programas abertos do Sistema.
+
+Com mais memória que um Elefante com SSD, facilita a associação e recuperação de textos com atalhos em cada Letra/Número do teclado.
+
+Sem precisar digitar aquele endereço enorme da Web, e sem precisar utilizar o Menu Iniciar ou Atalhos da Área de Trabalho. "Uff!! Cansei!". Você pode abrir programas ou sites com apenas um atalho.
+
+Se você é afixionado por atalhos assim como eu, então este aplicativo é para você!!!
+
+<br>
 
 ## Quando posso utilizar o Cyclops?
 
@@ -59,12 +74,16 @@
 
 Com esta funcionalidade você pode armazenar um texto, frase, palavra, números ou letras, associando com uma tecla, e recuperar rapidamente esta informação através de atalhos.
 
+<br>
+
 ### Observações
 
 - Você pode utilizar todas as letras [A..Z] e números [0..9] do teclado normal (não é o teclado numérico).
 - O aplicativo realmente digita o texto associado. Como se cada tecla fosse pressionada.
 - Todos os textos armazenados são salvos em apenas uma linha de texto.
 - Não é possível armazenar um texto que possui múltiplas linhas à uma única chave. (Não é multilinha)
+
+<br>
 
 #### Associar Texto
 
@@ -80,27 +99,35 @@ Com esta funcionalidade você pode armazenar um texto, frase, palavra, números ou
 | ...                                            | Associa um texto com cada Número do Teclado |
 | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>0</kbd> | Associa um texto a Tecla 0                  |
 
+<br>
+
 #### Escrever Texto
 
-| Atalho                                         | Descrição                                         |
-| ---------------------------------------------- | ------------------------------------------------- |
-| <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>A</kbd> | Escreve texto associado a Letra A                 |
-| <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>B</kbd> | Escreve texto associado a Letra B                 |
-| <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>C</kbd> | Escreve texto associado a Letra C                 |
-| ...                                            | Escreve texto associado com cada Letra do Teclado |
-| <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>Z</kbd> | Escreve texto associado a Letra Z                 |
-| <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>1</kbd> | Escreve texto associado a Tecla 1                 |
-| <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>2</kbd> | Escreve texto associado a Tecla 2                 |
-| ...                                            | Escreve texto associado com Número do Teclado     |
-| <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>0</kbd> | Escreve texto associado a Tecla 0                 |
+| Atalho                                           | Descrição                                         |
+| ------------------------------------------------ | ------------------------------------------------- |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> | Escreve texto associado a Letra A                 |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> | Escreve texto associado a Letra B                 |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | Escreve texto associado a Letra C                 |
+| ...                                              | Escreve texto associado com cada Letra do Teclado |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> | Escreve texto associado a Letra Z                 |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>1</kbd> | Escreve texto associado a Tecla 1                 |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd> | Escreve texto associado a Tecla 2                 |
+| ...                                              | Escreve texto associado com Número do Teclado     |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd> | Escreve texto associado a Tecla 0                 |
+
+<br>
 
 ### Salvar Texto com uma Chave Personalizada
 
 Talvez você queira associar um Texto a uma Palavra específica para seu contexto. Neste caso você pode armazenar uma chave personalizada.
 
+<br>
+
 #### Salvar Texto com Chave Personalizada
 
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>I</kbd> | Faz a associação com uma chave personalizada
+**Input:** Faz a associação com uma chave personalizada
+
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>I</kbd>
 
 Você pode utilizar a palavra "Matrícula" como **Chave** e associar o Texto "12345"
 
@@ -114,11 +141,15 @@ Você pode utilizar a palavra "Matrícula" como **Chave** e associar o Texto "1234
 
 _Matricula=12345_
 
+<br>
+
 #### Escrever Texto Associado a Chave Personalizada
+
+**Output:** Escreve o texto associado a chave personalizada
 
 Para recuperar esta informação você pode utilizar o atalho
 
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>O</kbd> | Escreve o texto associado a chave personalizada
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>O</kbd>
 
 - Informando a Chave Personalizada
 
@@ -175,6 +206,8 @@ Com o Cyclops você consegue associar um arquivo [\*.exe, \*.pdf, \*.xls] ou um e
 
 Você pode alterar rapidamente entre janelas do Windows sem utilizar o <kbd>Alt</kbd> + <kbd>Tab</kbd> e indo direto para a janela que você deseja, sem precisar ficar escolhendo em uma lista.
 
+<br>
+
 ### Observações
 
 - Esta funcionalidade está habilitada apenas para o Teclado Número (Numpad).
@@ -188,7 +221,9 @@ Você pode alterar rapidamente entre janelas do Windows sem utilizar o <kbd>Alt</
 
 ### Teclado Númerico | Numpad
 
-![Teclado Númerico](./img/docs/numeric_keyboard.png)
+![Teclado Númerico](./img/docs/numeric_keyboard.png)]
+
+<br>
 
 ### Associar uma Janela
 
@@ -198,6 +233,8 @@ Você pode alterar rapidamente entre janelas do Windows sem utilizar o <kbd>Alt</
 | <kbd>Win</kbd> + <kbd>Alt</kbd> + <kbd>NUMPAD 1</kbd> | Associa uma janela do Windows ao Número 1 |
 | ...                                                   |                                           |
 | <kbd>Win</kbd> + <kbd>Alt</kbd> + <kbd>NUMPAD 9</kbd> | Associa uma janela do Windows ao Número 2 |
+
+<br>
 
 ### Ativar Janela
 
@@ -232,6 +269,8 @@ Você pode alterar rapidamente entre janelas do Windows sem utilizar o <kbd>Alt</
 - Todos os textos e atalhos são armazenados em um arquivos **.ini** criado no mesmo diretório do executável.
 - Os dados que você informa não são compartilhados na nuvem ou em lugar algum.
 - Todos os textos e atalhos ficam somente no seu computador.
+
+<br>
 
 ## LICENÇA MIT
 
