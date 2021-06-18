@@ -45,13 +45,9 @@
 
 1. <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>C</kbd> - Digite um texto qualquer.
 
-2. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>NUMPAD 1</kbd> - Abrir o Bloco de Notas.
+2. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd> - Abrir o Bloco de Notas.
 
 3. <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> - Será digitado o texto que você associou a Letra C.
-
-<br>
-
-- _NUMPAD = Teclado Numérico_
 
 <br>
 
