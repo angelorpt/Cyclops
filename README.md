@@ -2,7 +2,7 @@
 
 ![Cyclops](./img/cyclops_128x128.png)
 
-**Cyclops** é um aplicativo desenvolvido em [AutoHotkey](https://www.autohotkey.com) que tem o objetivo de tornar mais rápido e eficiente a troca entre janelas, memorização de texto e execução rápida de arquivos e endereços web. 
+**Cyclops** é um aplicativo desenvolvido em [AutoHotkey](https://www.autohotkey.com) que tem o objetivo de tornar mais rápido e eficiente a troca entre janelas, memorização de texto e execução rápida de arquivos e endereços web.
 
 <br>
 
@@ -25,6 +25,10 @@ _NUMPAD = Teclado Numérico_
 `ALT + WIN + [A..Z/0..9]` - Salva um texto na memória interna.
 
 `ALT + SHIFT + [A..Z/0..9]` - Digita o texto que foi salva no atalho correspondente.
+
+`CTRL + WIN + ALT + i` - Informe uma Key personalizada, depois o texto que você quer salvar.
+
+`CTRL + WIN + ALT + o` - Informe o nome da Key criada anteriormente. Será digitado o texto associado a esta Key.
 
 <br>
 

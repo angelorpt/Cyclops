@@ -117,6 +117,66 @@ private_get_memory(v_index, v_type)
     }    
 }
 
+^#!i::
+    ; Input Key
+    ;----------------
+    InputBox, v_key, Key of Text, Typist the text to save in Cyclops[key]
+    if ErrorLevel 
+        Return
+    v_key := Trim(v_key)
+    StringUpper, v_key, v_key
+    StringLen v_size, v_key
+    if (v_size <= 0)
+    {
+        MsgBox, Invalid Key
+        Return
+    }
+
+    ; Input Text
+    ;----------------
+    InputBox, v_text, Text, 
+    (
+        Typist the text to save in Cyclops
+
+        Key: "%v_key%"
+    )
+    if ErrorLevel 
+        Return
+    StringLen v_size_text, v_text
+    if (v_size_text > 0)
+        IniWrite, %v_text%, %A_ScriptDir%\Cyclops.ini, Memory, %v_key%
+
+Return
+
+^#!o::
+    ; Input Key
+    ;----------------
+    InputBox, v_key, Key of Text, Typist the text to save in Cyclops[key]
+    if ErrorLevel 
+        Return
+    v_key := Trim(v_key)
+    StringUpper, v_key, v_key
+    StringLen v_size, v_key
+    if (v_size <= 0)
+    {
+        MsgBox, Invalid Key
+        Return
+    }
+
+    ; Write value
+    ;----------------
+    IniRead, v_text, %A_ScriptDir%\Cyclops.ini, Memory, %v_key%
+    if v_text = Error
+        Return
+
+    v_text := Adjust_Text(v_text)
+    StringLen v_size, v_text
+
+    if (v_size > 0) 
+        Send, %v_text%
+
+Return
+
 
 ; ----------------------
 ; -- SHOTCUTS -- TEXT

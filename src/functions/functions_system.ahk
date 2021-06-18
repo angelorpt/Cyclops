@@ -4,24 +4,24 @@
 ;------------------------
 
 ; Informacoes do sistema
-^#!i::
-    if (A_Is64bitOS = 1)
-        Sistema := "64 bits"
-    else
-        Sistema := "32 bits"    
+; ^#!i::
+;     if (A_Is64bitOS = 1)
+;         Sistema := "64 bits"
+;     else
+;         Sistema := "32 bits"    
     
-    Msgbox, 
-(
-PC Name: %A_ComputerName%
+;     Msgbox, 
+; (
+; PC Name: %A_ComputerName%
 
-System: %A_OSVersion%
-Type: %Sistema%
+; System: %A_OSVersion%
+; Type: %Sistema%
 
-User: %A_UserName%
+; User: %A_UserName%
 
-IP: %A_IPAddress1%
-)
-Return
+; IP: %A_IPAddress1%
+; )
+; Return
 
 ;------------------------
 ; DEFAULT APPS
