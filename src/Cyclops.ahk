@@ -7,8 +7,8 @@ SetWorkingDir %A_MyDocuments%  ;  %A_ScriptDir%  ; Ensures a consistent starting
 
 
 ProductName      := "Cyclops"
-ProductVersion   := "0.1.5"
-ProductPublisher := "Angelo R. Pinto"
+ProductVersion   := "0.1.6"
+ProductPublisher := "Angelo Rafael"
 ProductWebsite   := "https://github.com/angelorpt/cyclops"
 autoComplete     := 0 ; DEFAULT
 
