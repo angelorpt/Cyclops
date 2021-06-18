@@ -42,7 +42,11 @@ ESCREVER TEXTO
 
 ## Execute File or URL
 
+SALVA DIRETÓRIO COMPLETO OU URL COMPLETA
+
 `WIN + CTRL + [A..Z/0..9]` - Informe o caminho completo do arquivo ou URL.
+
+EXECUTA O ARQUIVO OU URL SALVO
 
 `WIN + SHIFT + [A..Z/0..9]` - Executa o arquivo ou a URL no navegador padrão.
 
