@@ -99,11 +99,11 @@ Você pode utilizar a palavra "Matrícula" como **Chave** e associar o Texto "1234
 
 - Informando a Chave Personalizada
 
-  ![Input Key](img\docs\input_key.png)
+  ![Input Key](./img/docs/input_key.png)
 
 - Informando o Texto que será associado a esta Chave
 
-  ![Input Value](img\docs\input_value.png)
+  ![Input Value](./img/docs/input_value.png)
 
 _Matricula=12345_
 
@@ -115,11 +115,11 @@ Para recuperar esta informação você pode utilizar o atalho
 
 - Informando a Chave Personalizada
 
-  ![Output Key](img\docs\output_key.png)
+  ![Output Key](./img/docs/output_key.png)
 
 - Será digitado, na Tela que estiver ativa, o texto associado a Chave
 
-  ![Output Value](img\docs\output_value.png)
+  ![Output Value](./img/docs/output_value.png)
 
 <br>
 
@@ -181,7 +181,7 @@ Você pode alterar rapidamente entre janelas do Windows sem utilizar o <kbd>Alt</
 
 ### Teclado Númerico | Numpad
 
-![Teclado Númerico](img\docs\numeric_keyboard.png)
+![Teclado Númerico](./img/docs/numeric_keyboard.png)
 
 ### Associar uma Janela
 
