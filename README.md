@@ -188,17 +188,17 @@ Com o Cyclops você consegue associar um arquivo [\*.exe, \*.pdf, \*.xls] ou um 
 
 ### Executar Arquivo/URL
 
-| Atalho                                          | Descrição                                                  |
-| ----------------------------------------------- | ---------------------------------------------------------- |
-| <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>A</kbd> | Executa um arquivo/url associado a Letra A                 |
-| <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>B</kbd> | Executa um arquivo/url associado a Letra B                 |
-| <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>C</kbd> | Executa um arquivo/url associado a Letra C                 |
-| ...                                             | Executa um arquivo/url associado com cada Letra do Teclado |
-| <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>Z</kbd> | Executa um arquivo/url associado a Letra Z                 |
-| <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>1</kbd> | Executa um arquivo/url associado a Tecla 1                 |
-| <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>2</kbd> | Executa um arquivo/url associado a Tecla 2                 |
-| ...                                             | Executa um arquivo/url associado com Número do Teclado     |
-| <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>0</kbd> | Executa um arquivo/url associado a Tecla 0                 |
+| Atalho                                           | Descrição                                                  |
+| ------------------------------------------------ | ---------------------------------------------------------- |
+| <kbd>Shift</kbd> + <kbd>Win</kbd> + <kbd>A</kbd> | Executa um arquivo/url associado a Letra A                 |
+| <kbd>Shift</kbd> + <kbd>Win</kbd> + <kbd>B</kbd> | Executa um arquivo/url associado a Letra B                 |
+| <kbd>Shift</kbd> + <kbd>Win</kbd> + <kbd>C</kbd> | Executa um arquivo/url associado a Letra C                 |
+| ...                                              | Executa um arquivo/url associado com cada Letra do Teclado |
+| <kbd>Shift</kbd> + <kbd>Win</kbd> + <kbd>Z</kbd> | Executa um arquivo/url associado a Letra Z                 |
+| <kbd>Shift</kbd> + <kbd>Win</kbd> + <kbd>1</kbd> | Executa um arquivo/url associado a Tecla 1                 |
+| <kbd>Shift</kbd> + <kbd>Win</kbd> + <kbd>2</kbd> | Executa um arquivo/url associado a Tecla 2                 |
+| ...                                              | Executa um arquivo/url associado com Número do Teclado     |
+| <kbd>Shift</kbd> + <kbd>Win</kbd> + <kbd>0</kbd> | Executa um arquivo/url associado a Tecla 0                 |
 
 <br>
 
