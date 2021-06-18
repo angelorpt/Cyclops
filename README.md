@@ -5,7 +5,8 @@
 - [Cyclops](#cyclops)
   - [O que é o Cyclops?](#o-que-é-o-cyclops)
   - [Quando posso utilizar o Cyclops?](#quando-posso-utilizar-o-cyclops)
-  - [Experimente Rápido](#experimente-rápido)
+  - [Download](#download)
+  - [Experimente sem compromisso](#experimente-sem-compromisso)
   - [Texto Rápido](#texto-rápido)
     - [Associação com Letras / Números](#associação-com-letras--números)
     - [Observações](#observações)
@@ -58,7 +59,13 @@ Se você é afixionado por atalhos assim como eu, então este aplicativo é para
 
 <br>
 
-## Experimente Rápido
+## Download
+
+Baixe a versão mais atual [aqui](https://github.com/angelorpt/Cyclops/releases)
+
+<br>
+
+## Experimente sem compromisso
 
 1. <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>C</kbd> - Digite um texto qualquer.
 
@@ -167,10 +174,10 @@ Com o Cyclops você consegue associar um arquivo [\*.exe, \*.pdf, \*.xls] ou um 
 
 ### Observações
 
-- Para arquivos é necessário informar o caminho completo do arquivos
-- Também funciona com o path (endereço completo) dos atalhos na área de trabalho
-- Para endereço da web você deve informar com o "HTTPS://" na frente
-- Páginas da Internet serão abertas no navegador padrão do sistema
+- Para arquivos é necessário informar o caminho completo do arquivos.
+- Também funciona com o path (endereço completo) dos atalhos na área de trabalho.
+- Para endereço da web você deve informar com o "HTTPS://" na frente.
+- Páginas da Internet serão abertas no navegador padrão do sistema.
 
 ### Associar Arquivo/URL
 
@@ -215,7 +222,7 @@ Você pode alterar rapidamente entre janelas do Windows sem utilizar o <kbd>Alt<
 - Precisa informar o título ou parte do título da janela que você deseja associar.
 - É case-sensitive, considera diferença entre maíuscula e mínuscula.
 - Funciona com parte do Título da Janela. Não precisa ser o título completo.
-- Há um atalho, em **Outras Funções** para copiar o título da janela ativa.
+- Há um atalho, no menu **Outras Funções**, para copiar o título da janela ativa.
 
 <br>
 
