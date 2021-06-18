@@ -2,7 +2,7 @@
 
 ![Cyclops](./img/cyclops_128x128.png)
 
-**Cyclops** é um aplicativo desenvolvido em [AutoHotkey](https://www.autohotkey.com) que tem o objetivo de tornar mais rápido e eficiente a troca entre janelas, memorização de texto e execução rápida de arquivos e endereços web.
+**Cyclops** Ã© um aplicativo desenvolvido em [AutoHotkey](https://www.autohotkey.com) que tem o objetivo de tornar mais rÃ¡pido e eficiente a troca entre janelas, memorizaÃ§Ã£o de texto e execuÃ§Ã£o rÃ¡pida de arquivos e endereÃ§os web.
 
 <br>
 
@@ -12,37 +12,49 @@
 
 2. `CTRL + ALT + [NUMPAD 1]` - Abrir o Bloco de Notas
 
-3. `ALT + SHIFT - C` - Digita o texto que você informou anteriormente
+3. `ALT + SHIFT - C` - Digita o texto que vocÃª informou anteriormente
 
 <br>
 
-_NUMPAD = Teclado Numérico_
+_NUMPAD = Teclado NumÃ©rico_
 
 <br>
 
 ## Memory Text
 
-`ALT + WIN + [A..Z/0..9]` - Salva um texto na memória interna.
+SALVAR TEXTO
+
+`ALT + WIN + [A..Z/0..9]` - Salva um texto na memÃ³ria interna.
+
+ESCREVER TEXTO
 
 `ALT + SHIFT + [A..Z/0..9]` - Digita o texto que foi salva no atalho correspondente.
 
-`CTRL + WIN + ALT + i` - Informe uma Key personalizada, depois o texto que você quer salvar.
+SALVAR TEXTO
 
-`CTRL + WIN + ALT + o` - Informe o nome da Key criada anteriormente. Será digitado o texto associado a esta Key.
+`CTRL + WIN + ALT + i` - Informe uma Key personalizada, depois o texto que vocÃª quer salvar.
+
+ESCREVER TEXTO
+
+`CTRL + WIN + ALT + o` - Informe o nome da Key criada anteriormente. SerÃ¡ digitado o texto associado a esta Key.
 
 <br>
 
 ## Execute File or URL
 
-`CTRL + WIN + [A..Z/0..9]` - Informe o caminho completo do arquivo ou URL.
+`WIN + CTRL + [A..Z/0..9]` - Informe o caminho completo do arquivo ou URL.
 
-`CTRL + SHIFT + [A..Z/0..9]` - Executa o arquivo ou a URL no navegador padrão.
+`WIN + SHIFT + [A..Z/0..9]` - Executa o arquivo ou a URL no navegador padrÃ£o.
 
 <br>
 
 ## Switch Window
 
-`WIN + ALT + [NUMPAD 0..9]` - Informe parte do nome que está no título da janela.
+SALVA NOME DA JANELA
+
+`WIN + ALT + [NUMPAD 0..9]` - Informe parte do nome que estÃ¡ no tÃ­tulo da janela.
+
+ATIVA A JANELA COM O NOME SALVO
 
 `WIN + CTRL + [NUMPAD 0..9]` - Ativa a janela que possui o nome cadastrado.
 
@@ -54,9 +66,7 @@ _NUMPAD = Teclado Numérico_
 
 `CTRL + ALT + [NUMPAD 2]` - Abre a calculadora.
 
-`CTRL + WIN + ALT + I` - Informações do Sistema.
-
-`CTRL + WIN + SHIFT + N` - Copia o nome da janela para a área de transferência.
+`CTRL + WIN + SHIFT + N` - Copia o nome da janela para a Ã¡rea de transferÃªncia.
 
 `CTRL + WIN + SHIFT + W` - Ativa todas as janelas abertas.
 
@@ -70,7 +80,7 @@ _NUMPAD = Teclado Numérico_
 
 <br>
 
-### LICENÇA MIT
+### LICENÃ‡A MIT
 
 <br>
 
