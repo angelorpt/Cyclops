@@ -1,41 +1,27 @@
-﻿;------------------------
+﻿#Requires AutoHotkey v2.0+
+;------------------------
 ; FUNCTIONS
 ;------------------------
 
 ^#!r::
-    MsgBox, 4, , Deseja reiniciar o Cyclops?, 5
-    IfMsgBox, No
-        Return
-    IfMsgBox, Timeout
-        Return
-    Gosub, restart_cyclops_sub
-Return
-
-restart_cyclops_sub:
-    Reload
-Return
+{
+    result := MsgBox("Deseja reiniciar o Cyclops?", "Cyclops", "YesNo 4096")
+    if (result = "Yes")
+        Reload()
+}
 
 Adjust_Text(sText)
 {
-    ; StringReplace, sText, sText, {, {{}, All ; x
-    ; StringReplace, sText, sText, }, {}}, All ; x
-    StringReplace, sText, sText, !, {!}, All
-    StringReplace, sText, sText, +, {+}, All
-    StringReplace, sText, sText, #, {#}, All
-    StringReplace, sText, sText, ^, {^}, All
-    StringReplace, sText, sText, ?, {?}, All
-    StringReplace, sText, sText, @, {@}, All
-    ; StringReplace, sText, sText, %%, {%}, All
-    ; StringReplace, sText, sText, , {;}, All
-    Return sText
+    sText := StrReplace(sText, "!", "{!}")
+    sText := StrReplace(sText, "+", "{+}")
+    sText := StrReplace(sText, "#", "{#}")
+    sText := StrReplace(sText, "^", "{^}")
+    sText := StrReplace(sText, "?", "{?}")
+    sText := StrReplace(sText, "@", "{@}")
+    return sText
 }
 
-; Copy this function into your script to use it.
-HideTrayTip() {
-    TrayTip  ; Attempt to hide it the normal way.
-    if SubStr(A_OSVersion,1,3) = "10." {
-        Menu Tray, NoIcon
-        Sleep 50  ; It may be necessary to adjust this sleep.
-        Menu Tray, Icon
-    }
+HideTrayTip()
+{
+    TrayTip()
 }
