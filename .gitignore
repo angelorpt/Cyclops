@@ -1,0 +1,11 @@
+# Binaries and build outputs
+dist/
+bin/
+*.exe
+
+# Local configuration overrides
+*.local.ini
+
+# Temporary files
+*.tmp
+*.log
