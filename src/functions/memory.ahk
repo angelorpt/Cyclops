@@ -39,10 +39,7 @@ load_memory(v_index, v_type)
     {
         v_text := IniRead(v_ini, "Memory", "Memo" . v_index, "")
         if (v_text != "" && v_text != "Error")
-        {
-            v_text := Adjust_Text(v_text)
-            Send(v_text)
-        }
+            Output_Text(v_text)
     }
 
     if (v_type = "E") ; EXECUTE
@@ -102,7 +99,11 @@ private_get_memory(v_index, v_type)
 {
     ib_key := InputBox("Typist the Key Name to type:", "Type Text with Key", "w350 h130")
     if (ib_key.Result = "OK" && StrLen(ib_key.Value) > 0)
-        load_memory(ib_key.Value, "T")
+    {
+        v_text := private_get_memory(ib_key.Value, "T")
+        if (v_text != "")
+            Output_Text(v_text)
+    }
 }
 
 ; -----------------------------------------------------------------------------
