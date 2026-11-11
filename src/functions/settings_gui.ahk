@@ -59,6 +59,7 @@ SaveSettings(guiObj, rClip, eDelay)
 Setup_Tray_Menu()
 {
     A_TrayMenu.Delete()
+    A_TrayMenu.Add("📖 Guia de Atalhos...", (*) => Show_Help_Gui())
     A_TrayMenu.Add("⚙️ Configurações...", (*) => Show_Settings_Gui())
     A_TrayMenu.Add()
     A_TrayMenu.Add("🔄 Reiniciar Cyclops", (*) => Reload())

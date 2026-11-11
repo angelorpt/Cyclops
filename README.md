@@ -99,6 +99,8 @@ Instantly switch focus directly to specific open application windows:
 |---|---|
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd> or <kbd>Numpad 1</kbd> | Launch Notepad |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>2</kbd> or <kbd>Numpad 2</kbd> | Launch Calculator |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>S</kbd> | Open Settings GUI |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>H</kbd> | Open Shortcuts Help GUI |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>R</kbd> | Restart Cyclops |
 
 ---

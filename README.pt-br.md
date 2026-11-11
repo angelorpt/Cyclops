@@ -99,6 +99,8 @@ Armazene textos em uma única linha (emails, usuários, scripts, comandos SQL ou
 |---|---|
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd> ou <kbd>Numpad 1</kbd> | Abre o Bloco de Notas (Notepad) |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>2</kbd> ou <kbd>Numpad 2</kbd> | Abre a Calculadora |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>S</kbd> | Abre as Configurações |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>H</kbd> | Abre o Guia de Atalhos |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>R</kbd> | Reinicia o Cyclops |
 
 ---
