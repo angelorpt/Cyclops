@@ -108,34 +108,27 @@ private_get_memory(v_index, v_type)
 
 ; -----------------------------------------------------------------------------
 ; DYNAMIC HOTKEY REGISTRATION (DRY)
-; Binds all alphanumeric keys [a-z, 0-9] and Numpad [0-9]
+; Binds letters [a-z] for Text/URL and [0-9] / Numpad[0-9] for Window Switcher
 ; -----------------------------------------------------------------------------
 
 Register_Memory_Hotkeys()
 {
-    ; Letters a-z
+    ; Letters a-z for Text and Executable/URL Memory
     loop 26
     {
         k := Chr(96 + A_Index) ; 97 = a ... 122 = z
-        bind_alphanumeric_key(k)
+        bind_letter_key(k)
     }
 
-    ; Numbers 0-9
-    loop 10
-    {
-        k := String(A_Index - 1)
-        bind_alphanumeric_key(k)
-    }
-
-    ; Numpad keys 0-9 for Window Switcher
+    ; Top-row Numbers 0-9 and Numpad 0-9 for Window Switcher (TKL friendly)
     loop 10
     {
         n := String(A_Index - 1)
-        bind_numpad_window_key(n)
+        bind_window_key(n)
     }
 }
 
-bind_alphanumeric_key(key)
+bind_letter_key(key)
 {
     ; Alt + Win + <Key> -> Save Text
     Hotkey("!#" . key, (*) => save_memory(key, "T"))
@@ -146,15 +139,21 @@ bind_alphanumeric_key(key)
     ; Ctrl + Win + <Key> -> Save Executable / URL
     Hotkey("^#" . key, (*) => save_memory(key, "E"))
 
-    ; Ctrl + Shift + <Key> -> Launch Executable / URL
-    Hotkey("^+" . key, (*) => load_memory(key, "E"))
+    ; Ctrl + Alt + Win + <Key> -> Launch Executable / URL (Zero conflicts)
+    Hotkey("^!#" . key, (*) => load_memory(key, "E"))
 }
 
-bind_numpad_window_key(num)
+bind_window_key(num)
 {
+    ; Top-row Numbers [0-9]
+    ; Alt + Win + <N> -> Save Window Caption
+    Hotkey("!#" . num, (*) => save_memory(num, "W"))
+    ; Ctrl + Win + <N> -> Activate Window
+    Hotkey("^#" . num, (*) => load_memory(num, "W"))
+
+    ; Numpad [0-9]
     ; Alt + Win + Numpad<N> -> Save Window Caption
     Hotkey("!#Numpad" . num, (*) => save_memory(num, "W"))
-
     ; Ctrl + Win + Numpad<N> -> Activate Window
     Hotkey("^#Numpad" . num, (*) => load_memory(num, "W"))
 }

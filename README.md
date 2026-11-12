@@ -47,14 +47,14 @@
 
 ## Keyboard Shortcuts Reference
 
-### 1. Quick Text Snippets (Letters & Numbers)
+### 1. Quick Text Snippets (Letters A-Z)
 
 Assign and paste frequently used single-line texts (emails, tokens, queries, git commands):
 
 | Action | Shortcut | Description |
 |---|---|---|
-| **Save Text** | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>&lt;Key&gt;</kbd> | Opens prompt to assign text to key `[A-Z]` or `[0-9]` |
-| **Type Text** | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>&lt;Key&gt;</kbd> | Types out the text associated with `<Key>` |
+| **Save Text** | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>&lt;A-Z&gt;</kbd> | Opens prompt to assign text to key `[A-Z]` |
+| **Type Text** | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>&lt;A-Z&gt;</kbd> | Types out the text associated with `<A-Z>` |
 
 *Example:* Press <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>E</kbd>, enter your email. Later, press <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> anywhere to auto-type it.
 
@@ -71,25 +71,25 @@ Store snippets or paths under custom names:
 
 ---
 
-### 3. File & URL Launchers
+### 3. File & URL Launchers (Zero-Conflict Symmetrical Matrix)
 
-Associate and launch frequently accessed files, scripts, or URLs:
+Associate and launch frequently accessed files, scripts, or URLs without colliding with browser or code editor hotkeys:
 
 | Action | Shortcut | Description |
 |---|---|---|
-| **Save File/URL** | <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>&lt;Key&gt;</kbd> | Assign file path or URL to `[A-Z]` or `[0-9]` |
-| **Open File/URL** | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&lt;Key&gt;</kbd> | Launch the associated file or URL |
+| **Save File/URL** | <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>&lt;A-Z&gt;</kbd> | Assign file path or URL to `[A-Z]` |
+| **Open File/URL** | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>&lt;A-Z&gt;</kbd> | Launch the associated file or URL |
 
 ---
 
-### 4. Window Switcher (Numpad)
+### 4. Window Switcher (TKL & Full-Size Keyboards)
 
-Instantly switch focus directly to specific open application windows:
+Instantly switch focus directly to specific open application windows using standard top-row numbers or numpad:
 
 | Action | Shortcut | Description |
 |---|---|---|
-| **Associate Window** | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>Numpad &lt;0-9&gt;</kbd> | Prompt window title portion to register |
-| **Activate Window** | <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>Numpad &lt;0-9&gt;</kbd> | Direct focus to registered window |
+| **Associate Window** | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>&lt;0-9 / Numpad 0-9&gt;</kbd> | Prompt window title portion to register |
+| **Activate Window** | <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>&lt;0-9 / Numpad 0-9&gt;</kbd> | Direct focus to registered window |
 
 ---
 
@@ -102,6 +102,7 @@ Instantly switch focus directly to specific open application windows:
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>S</kbd> | Open Settings GUI |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>H</kbd> | Open Shortcuts Help GUI |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>R</kbd> | Restart Cyclops |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>P</kbd> | Pause / Resume Cyclops Hotkeys |
 
 ---
 
