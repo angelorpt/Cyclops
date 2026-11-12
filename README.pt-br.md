@@ -55,14 +55,14 @@
 
 ## Tabela de Atalhos
 
-### 1. Texto Rápido (Letras e Números)
+### 1. Texto Rápido (Letras A-Z)
 
 Armazene textos em uma única linha (emails, usuários, scripts, comandos SQL ou Git):
 
 | Ação | Atalho | Descrição |
 |---|---|---|
-| **Salvar Texto** | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>&lt;Tecla&gt;</kbd> | Abre o prompt para associar o texto à tecla `[A-Z]` ou `[0-9]` |
-| **Digitar Texto** | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>&lt;Tecla&gt;</kbd> | Digita automaticamente o texto associado à tecla informada |
+| **Salvar Texto** | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>&lt;A-Z&gt;</kbd> | Abre o prompt para associar o texto à tecla `[A-Z]` |
+| **Digitar Texto** | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>&lt;A-Z&gt;</kbd> | Digita automaticamente o texto associado à tecla informada |
 
 ---
 
@@ -75,21 +75,21 @@ Armazene textos em uma única linha (emails, usuários, scripts, comandos SQL ou
 
 ---
 
-### 3. Executar Arquivos ou URLs
+### 3. Executar Arquivos ou URLs (Matriz Simétrica Sem Conflitos)
 
 | Ação | Atalho | Descrição |
 |---|---|---|
-| **Salvar Caminho/URL** | <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>&lt;Tecla&gt;</kbd> | Associa um caminho local ou URL a `[A-Z]` ou `[0-9]` |
-| **Executar** | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&lt;Tecla&gt;</kbd> | Abre o arquivo, programa ou URL associado |
+| **Salvar Caminho/URL** | <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>&lt;A-Z&gt;</kbd> | Associa um caminho local ou URL a `[A-Z]` |
+| **Executar** | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>&lt;A-Z&gt;</kbd> | Abre o arquivo, programa ou URL associado sem conflitar com outros apps |
 
 ---
 
-### 4. Alternador de Janelas (Teclado Numérico / Numpad)
+### 4. Alternador de Janelas (Teclados TKL e Numpad)
 
 | Ação | Atalho | Descrição |
 |---|---|---|
-| **Associar Janela** | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>Numpad &lt;0-9&gt;</kbd> | Informa parte do título da janela a associar |
-| **Ativar Janela** | <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>Numpad &lt;0-9&gt;</kbd> | Traz imediatamente a janela correspondente para o foco |
+| **Associar Janela** | <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>&lt;0-9 / Numpad 0-9&gt;</kbd> | Informa parte do título da janela a associar |
+| **Ativar Janela** | <kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>&lt;0-9 / Numpad 0-9&gt;</kbd> | Traz imediatamente a janela correspondente para o foco |
 
 ---
 
@@ -102,6 +102,7 @@ Armazene textos em uma única linha (emails, usuários, scripts, comandos SQL ou
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>S</kbd> | Abre as Configurações |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>H</kbd> | Abre o Guia de Atalhos |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>R</kbd> | Reinicia o Cyclops |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Win</kbd> + <kbd>P</kbd> | Pausar / Retomar Atalhos do Cyclops |
 
 ---
 

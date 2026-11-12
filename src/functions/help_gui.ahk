@@ -25,20 +25,20 @@ Show_Help_Gui(*)
     lv.ModifyCol(3, 230)
 
     ; Text Snippets
-    lv.Add("", "Texto Rápido", "Alt + Win + <Tecla>", "Salva texto na tecla [A-Z, 0-9]")
-    lv.Add("", "Texto Rápido", "Alt + Shift + <Tecla>", "Cola/digita o texto da tecla")
+    lv.Add("", "Texto Rápido", "Alt + Win + <Tecla>", "Salva texto na tecla [A-Z]")
+    lv.Add("", "Texto Rápido", "Alt + Shift + <Tecla>", "Cola/digita o texto da tecla [A-Z]")
 
     ; Custom Keys
     lv.Add("", "Chave Custom", "Ctrl + Alt + Win + M", "Salva texto com nome de chave")
     lv.Add("", "Chave Custom", "Ctrl + Alt + Shift + M", "Digita texto pela chave")
 
     ; Files & URLs
-    lv.Add("", "Executar / URL", "Ctrl + Win + <Tecla>", "Salva caminho ou URL na tecla")
-    lv.Add("", "Executar / URL", "Ctrl + Shift + <Tecla>", "Abre o arquivo, programa ou site")
+    lv.Add("", "Executar / URL", "Ctrl + Win + <Tecla>", "Salva caminho ou URL na tecla [A-Z]")
+    lv.Add("", "Executar / URL", "Ctrl + Alt + Win + <Tecla>", "Abre o arquivo, programa ou site [A-Z]")
 
     ; Window Switcher
-    lv.Add("", "Alternar Janela", "Alt + Win + Numpad [0-9]", "Associa título da janela ao Numpad")
-    lv.Add("", "Alternar Janela", "Ctrl + Win + Numpad [0-9]", "Ativa/foca janela associada")
+    lv.Add("", "Alternar Janela", "Alt + Win + [0-9, Num 0-9]", "Associa título da janela (TKL e Numpad)")
+    lv.Add("", "Alternar Janela", "Ctrl + Win + [0-9, Num 0-9]", "Ativa/foca janela associada")
 
     ; System & Helpers
     lv.Add("", "Sistema", "Ctrl + Alt + 1 (ou Num 1)", "Abre o Bloco de Notas")
@@ -46,6 +46,7 @@ Show_Help_Gui(*)
     lv.Add("", "Sistema", "Ctrl + Alt + Win + S", "Abre as Configurações")
     lv.Add("", "Sistema", "Ctrl + Alt + Win + H", "Abre este Guia de Atalhos")
     lv.Add("", "Sistema", "Ctrl + Alt + Win + R", "Reinicia o Cyclops")
+    lv.Add("", "Sistema", "Ctrl + Alt + Win + P", "Pausar / Retomar Atalhos do Cyclops")
 
     btnClose := helpGui.Add("Button", "w100 x480 yp+395 Default", "Fechar")
     btnClose.OnEvent("Click", (*) => helpGui.Hide())
